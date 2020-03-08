@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+<table class="table">
+    <tbody>
+        {% for i in mask %}
+        <div class="card">
+            <div class="card-header">
+                <h3>{{i.name}}</h3>
+            </div>
+            <div class="card-body">
+                <img src="{{mask.image.url}}" width="95px">
+                <h6>{{i.des}}</h6>
+            </div>
+            <div class="card-footer">
+                <h4>{{i.price}} บาท</h4>
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="{{ key }}"
+                    data-description="{{i.name}}"
+                    data-amount="{{i.price}}"
+                    data-currency='thb'
+                    data-locale="auto">
+                </script>              
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+    </tbody>
+  </table>
+  
+{% endblock %}
