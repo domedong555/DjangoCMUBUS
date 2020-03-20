@@ -3,7 +3,7 @@
 กลุ่มคูโบต้า ได้ Review code ของกลุ่ม big O
   ***https://github.com/inzee86333/Miniprojact***  
   
-พบว่ามี Code smell ประเภท BLOATER : Long method เพราะมี Method ชื่อเดียวกันและการทำงานคล้ายกันคือ courseName() courseDetail() coursePrice() อยู่ทั้งสามClass   
+พบว่ามี Code smell ประเภท DISPENSABLE: Duplicate code เพราะมี Method ชื่อเดียวกันและการทำงานคล้ายกันคือ courseName() courseDetail() coursePrice() อยู่ทั้งสามClass   
   ***Miniprojact/src/Course/MuscleBuilding.java***  
   ***Miniprojact/src/Course/WeightGain.java***  
   ***Miniprojact/src/Course/WeightLoss.java***  
